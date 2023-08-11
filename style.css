@@ -6,7 +6,7 @@ body {
   }
   
   p {
-    font-family: Copperplate, Papyrus, fantasy !important;
+    font-family: 'Poppins', sans-serif !important;
   }
 
   .intro {
@@ -319,18 +319,21 @@ body {
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
 
-/* Media query for screens with a maximum width of 768px (typical for tablets and phones) */
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
 
-  .intro h1 {
-    font-size: 3rem; /* Adjust font size for smaller screens */
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-
-  /* Adjust other styles as needed for smaller screens */
 }
 
+/* Mobile screens */
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
 
+  /* Adjust other styles as needed */
+}
 
