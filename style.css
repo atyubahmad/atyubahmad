@@ -338,22 +338,51 @@ body {
   /* Adjust other styles as needed for tablet screens */
 }
 
-/* Mobile screens */
-@media (max-width: 480px) {
-  .intro h1 {
-    font-size: 2rem; /* Further reduce font size for mobile */
-  }
+/* Default styles */
 
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
   .container {
-    padding: 20px; /* Reduce padding for mobile */
+    flex-direction: column;
+    align-items: center;
   }
 
-  .buttons {
-    display: block; /* Display buttons as block elements */
-    text-align: center; /* Center buttons on mobile */
-    margin-top: 10px; /* Adjust spacing for mobile */
+  .column {
+    width: 80%; /* Adjust the width as needed for smaller screens */
   }
 
-  /* Adjust other styles as needed for mobile screens */
+  .intro h1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+
+  .buttons a {
+    font-size: 1rem; /* Adjust font size for navigation links */
+    padding: 5px 10px; /* Adjust padding for navigation links */
+  }
+
+  .resume embed {
+    height: 400px; /* Adjust the height of the embedded PDF */
+  }
 }
+
+/* Mobile screens */
+@media (max-width: 375px) { /* iPhone 12 screen width */
+  .column {
+    width: 100%; /* Make the column width full for small screens */
+  }
+
+  .intro h1 {
+    font-size: 2.5rem; /* Further reduce font size for smaller screens */
+  }
+
+  .buttons a {
+    font-size: 0.9rem; /* Further reduce font size for navigation links */
+    padding: 4px 8px; /* Further reduce padding for navigation links */
+  }
+
+  .resume embed {
+    height: 300px; /* Further adjust the height of the embedded PDF */
+  }
+}
+
 
