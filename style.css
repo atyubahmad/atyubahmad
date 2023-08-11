@@ -330,9 +330,13 @@ body {
 
 /* Mobile screens */
 @media (max-width: 480px) {
-  .intro h1 {
-    font-size: 3rem;
-  }
+    .intro h1 {
+        font-size: 3rem;
+      }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
   /* Adjust other styles as needed */
 }
